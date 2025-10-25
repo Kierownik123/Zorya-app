@@ -1,7 +1,8 @@
 {
     "icon": "public/favicon.png",
+    "win_icon": "public/app.ico",
     "name": "Zorya App",
     "description": "Zorya app",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Kierownik123"
 }
