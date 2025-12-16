@@ -5,8 +5,7 @@ My Zhiva app.
 ## Setup:
 
 ```bash
-zhiva-install Kierownik123/Zorya-app
-zhiva-setup Kierownik123/Zorya-app
+zhiva install Kierownik123/Zorya-app
 ```
 
 Enjoy! 💜
