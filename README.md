@@ -1,5 +1,7 @@
 # Zorya App Repository
 
+[![Install via Zhiva](https://img.shields.io/badge/Zhiva-install-blue)](zhiva://install/Kierownik123/Zorya-app)
+
 My Zhiva app.
 
 ## Setup:
