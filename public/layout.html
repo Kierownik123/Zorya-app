@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zorya {{ name }}</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>Zorya-app</h1>
-        <p>
-            <a href="index.html">
-                <img src="logo.png" alt="Zorya-app" />
-            </a>
-        </p>
-        <h3>Witaj w moim zorzowym pamiętniku. </h3>
+    <header class="container">
+        <hgroup>
+            <h1>Zorya-app</h1>
+            <p>
+                <a href="index.html">
+                    <img src="logo.png" alt="Zorya-app" style="max-height: 50px;" />
+                </a>
+            </p>
+            <h3>Witaj w moim zorzowym pamiętniku. </h3>
+        </hgroup>
     </header>
-    <main>
+    <main class="container">
         {{ body }}
     </main>
-    <a href="http://github.com/wxn0brP/Zhiva" target="_blank">Zhiva</a>
-    <footer>Stronę wykonał: <a href="https://github.com/Kierownik123"><b>Kierownik123</b></a></footer>
+    <footer class="container">
+        <p><a href="http://github.com/wxn0brP/Zhiva" target="_blank">Zhiva</a></p>
+        <p>Stronę wykonał: <a href="https://github.com/Kierownik123"><b>Kierownik123</b></a></p>
+    </footer>
 </body>
 
 </html>

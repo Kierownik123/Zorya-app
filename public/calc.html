@@ -1,17 +1,20 @@
-<form>
-    <input type="number" id="liczba1" placeholder="Pierwsza liczba">
-    <input type="number" id="liczba2" placeholder="Druga liczba">
-    <div class="calc-buttons">
-        <div class="calc-row">
-            <button type="button" onclick="dodawanie()">+</button>
-            <button type="button" onclick="odejmowanie()">-</button>
-            <button type="button" onclick="dzielenie()">/</button>
-        </div>
-        <div class="calc-row">
-            <button type="button" onclick="mnozenie()">*</button>
-            <button type="button" onclick="potegowanie()">^</button>
-            <button type="button" onclick="pierwiastkowanie()">√</button>
-        </div>
+<form class="container">
+    <fieldset>
+        <label for="liczba1">Pierwsza liczba</label>
+        <input type="number" id="liczba1" placeholder="Pierwsza liczba">
+
+        <label for="liczba2">Druga liczba</label>
+        <input type="number" id="liczba2" placeholder="Druga liczba">
+    </fieldset>
+
+    <div class="grid">
+        <button type="button" class="contrast" onclick="dodawanie()">+</button>
+        <button type="button" class="contrast" onclick="odejmowanie()">-</button>
+        <button type="button" class="contrast" onclick="dzielenie()">/</button>
+        <button type="button" class="contrast" onclick="mnozenie()">*</button>
+        <button type="button" class="contrast" onclick="potegowanie()">^</button>
+        <button type="button" class="contrast" onclick="pierwiastkowanie()">√</button>
     </div>
+
     <p id="wynik">Wynik: 0</p>
 </form>
