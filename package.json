@@ -12,11 +12,11 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "bun build src/browser.ts --minify --outfile dist/index.js --target browser -e @wxn0brp/vql-client",
+		"build": "bun build src/browser.ts --minify --outfile dist/index.js --target browser",
 		"start": "bun run src/index.ts"
 	},
 	"dependencies": {
-		"@wxn0brp/flanker-ui": "^0.4.3"
+		"@wxn0brp/flanker-ui": "^0.4.6"
 	},
 	"devDependencies": {
 		"@types/bun": "*",
