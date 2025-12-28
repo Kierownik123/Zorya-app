@@ -1,13 +1,7 @@
 {
-	"name": "@wxn0brp/zhiva-template-app",
+	"name": "@kierownik123/zorya-app",
 	"version": "0.0.1",
 	"main": "src/index.ts",
-	"description": "Zhiva Template App",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/wxn0brP/Zhiva-template-app.git"
-	},
-	"homepage": "https://github.com/wxn0brP/Zhiva-template-app",
 	"author": "Kierownik123",
 	"license": "MIT",
 	"type": "module",

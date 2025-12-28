@@ -1,6 +1,6 @@
 {
-    "icon": "public/favicon.png",
-    "win_icon": "public/app.ico",
+    "icon": "public/logo.png",
+    "win_icon": "public/logo.ico",
     "name": "Zorya App",
     "description": "Zorya app",
     "version": "0.0.5",
