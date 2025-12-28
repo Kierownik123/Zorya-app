@@ -1,14 +1,17 @@
 <form>
-    <input type="number" id="liczba1">
-    <input type="number" id="liczba2">
-    <br>
-    <button type="button" id="+">+</button>
-    <button type="button" id="-">-</button>
-    <button type="button" id="/">/</button>
-    <br>
-    <button type="button" id="*">*</button>
-    <button type="button" id="^">^</button>
-    <button type="button" id="sqrt">√</button>
-    <p id="wynik"></p>
+    <input type="number" id="liczba1" placeholder="Pierwsza liczba">
+    <input type="number" id="liczba2" placeholder="Druga liczba">
+    <div class="calc-buttons">
+        <div class="calc-row">
+            <button type="button" onclick="dodawanie()">+</button>
+            <button type="button" onclick="odejmowanie()">-</button>
+            <button type="button" onclick="dzielenie()">/</button>
+        </div>
+        <div class="calc-row">
+            <button type="button" onclick="mnozenie()">*</button>
+            <button type="button" onclick="potegowanie()">^</button>
+            <button type="button" onclick="pierwiastkowanie()">√</button>
+        </div>
+    </div>
+    <p id="wynik">Wynik: 0</p>
 </form>
-<script type="module" src="index.js"></script>
