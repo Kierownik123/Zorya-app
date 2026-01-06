@@ -8,7 +8,7 @@ document.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
         const liczba1 = parseFloat(liczba1Input.value)
         const liczba2 = parseFloat(liczba2Input.value)
-        const type = button.id;
+        const type = button.innerHTML;
         let wynik = 0;
         switch (type) {
             case "+":
@@ -30,7 +30,7 @@ document.querySelectorAll("button").forEach((button) => {
             case "^":
                 wynik = Math.pow(liczba1, liczba2);
                 break;
-            case "sqrt":
+            case "√":
                 wynik = Math.sqrt(liczba1);
                 break;
         }
