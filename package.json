@@ -1,20 +1,16 @@
 {
 	"name": "@kierownik123/zorya-app",
 	"version": "0.0.1",
-	"main": "src/index.ts",
 	"author": "Kierownik123",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "bun build src/browser.ts --minify --outfile dist/index.js --target browser",
-		"start": "bun run src/index.ts"
-	},
-	"dependencies": {
-		"@wxn0brp/flanker-ui": "^0.4.6"
+		"build": "bun build src/browser.ts --minify --outfile dist/browser.js --target browser"
 	},
 	"devDependencies": {
 		"@types/bun": "*",
 		"@wxn0brp/zhiva-base-lib": "github:wxn0brP/Zhiva-base-lib",
-		"typescript": "*"
+		"@wxn0brp/flanker-ui": "^0.4.6",
+		"typescript": "^5"
 	}
 }
