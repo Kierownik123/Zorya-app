@@ -2,6 +2,8 @@
 
 My Zhiva app.
 
+[![Install via Zhiva](https://img.shields.io/badge/Zhiva-install-blue)](https://wxn0brp.github.io/Zhiva-page/i#app=Kierownik123/Zorya-app)
+
 ## Setup:
 
 ```bash
