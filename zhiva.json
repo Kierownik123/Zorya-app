@@ -1,0 +1,18 @@
+{
+    "icon": "public/logo.png",
+    "win_icon": "public/logo.ico",
+    "name": "Zorya App",
+    "description": "Zorya app",
+    "version": "0.0.5",
+    "author": "Kierownik123",
+    "branch": "dist",
+    "static": {
+        "dirs": {
+            "/": "./public",
+            "-/": "./dist"
+        },
+        "vars": {
+            "layout": "public/layout.html"
+        }
+    }
+}
