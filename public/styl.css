@@ -1,0 +1,257 @@
+:root {
+    --bg: #1a1d23;
+    --surface: #22262e;
+    --surface-hover: #2a2f38;
+    --border: #333842;
+    --text: #e1e4e8;
+    --text-muted: #8b949e;
+    --primary: #58a6ff;
+    --primary-hover: #79b8ff;
+    --accent: #3fb950;
+    --radius: 8px;
+    --shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.logo-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--border), 0 0 20px rgba(88,166,255,.15);
+    transition: box-shadow .2s;
+}
+
+.logo:hover {
+    box-shadow: 0 0 0 2px var(--primary), 0 0 28px rgba(88,166,255,.3);
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: .875rem;
+    color: var(--text-muted);
+}
+
+footer a {
+    color: var(--text-muted);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+/* ---- index.html cards ---- */
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: .75rem;
+    box-shadow: var(--shadow);
+    transition: background .2s, border-color .2s;
+}
+
+.card:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary);
+}
+
+.card h3 {
+    font-size: 1.125rem;
+    margin-bottom: .25rem;
+}
+
+.card h3 a {
+    color: var(--text);
+}
+
+.card h3 a:hover {
+    color: var(--primary);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: .875rem;
+}
+
+/* ---- calc.html ---- */
+
+form.container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+input[type="number"] {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .625rem .75rem;
+    color: var(--text);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+}
+
+input[type="number"]:focus {
+    border-color: var(--primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    margin-bottom: 1.25rem;
+}
+
+button {
+    background: var(--border);
+    border: none;
+    border-radius: var(--radius);
+    padding: .875rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+button:hover {
+    background: var(--surface-hover);
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+button.contrast {
+    background: var(--primary);
+    color: #0d1117;
+}
+
+button.contrast:hover {
+    background: var(--primary-hover);
+}
+
+#wynik {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding: .75rem;
+    background: var(--bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+/* ---- zorya.html ---- */
+
+main.container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+main.container .card time {
+    display: block;
+    font-size: .8125rem;
+    color: var(--text-muted);
+    margin-bottom: .75rem;
+}
+
+main.container .card p {
+    color: var(--text);
+    font-size: .9375rem;
+    line-height: 1.6;
+    margin-bottom: .75rem;
+}
+
+main.container .card p a {
+    color: var(--primary);
+}
+
+main.container .card>a {
+    display: inline-block;
+    font-weight: 600;
+}
+
+main.container .card .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    margin-top: .75rem;
+    margin-bottom: 0;
+}
+
+main.container .card .grid a {
+    display: block;
+    text-align: center;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: background .2s, border-color .2s;
+}
+
+main.container .card .grid a:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary);
+    text-decoration: none;
+}

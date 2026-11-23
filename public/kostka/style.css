@@ -1,0 +1,224 @@
+:root {
+    --bg: #f3f3f3;
+    --panel: #ffffff;
+    --panel-soft: #ebebeb;
+    --line: #d5d5d5;
+    --text: #1f1f1f;
+    --muted: #5f5f5f;
+    --dark: #2c2c2c;
+    --shadow: rgba(17, 17, 17, 0.08);
+    --accent: #b9b9b9;
+    --success: rgba(94, 103, 101, 0.18);
+    --wrong: rgba(98, 98, 98, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top left, #ffffff 0%, #efefef 22%, #d9d9d9 72%, #c8c8c8 100%);
+    color: var(--text);
+}
+
+.page-shell {
+    width: min(1200px, calc(100% - 32px));
+    margin: 32px auto;
+    padding: 28px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 25px 60px var(--shadow);
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: var(--dark);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    margin-bottom: 12px;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: 0.06em;
+}
+
+.app-header p {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.quiz-wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(220px, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+#quizForm {
+    display: grid;
+    gap: 22px;
+}
+
+.question-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-2px);
+}
+
+.question-card.is-correct {
+    border-color: rgba(73, 84, 81, 0.8);
+    background: var(--success);
+}
+
+.question-card.is-wrong {
+    border-color: rgba(88, 88, 88, 0.85);
+    background: var(--wrong);
+}
+
+.question-top {
+    margin-bottom: 18px;
+}
+
+.question-number {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+.answer-list {
+    display: grid;
+    gap: 12px;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: 26px 34px 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    background: #f7f7f7;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.option input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--dark);
+}
+
+.option-letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--panel-soft);
+    border: 1px solid var(--line);
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.option-text {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #2c2c2c, #4f4f4f);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 16px 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 12px 22px rgba(44, 44, 44, 0.2);
+}
+
+.submit-btn:hover {
+    transform: translateY(-1px);
+}
+
+.result-panel {
+    position: sticky;
+    top: 24px;
+    background: rgba(44, 44, 44, 0.96);
+    color: #fff;
+    border-radius: 22px;
+    padding: 24px 20px;
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.18);
+}
+
+.result-panel h2 {
+    margin: 0 0 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.score {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.result-panel p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+@media (max-width: 860px) {
+    .quiz-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .result-panel {
+        position: static;
+    }
+}
+
+@media (max-width: 540px) {
+    .page-shell {
+        padding: 18px;
+    }
+
+    .question-card {
+        padding: 18px;
+    }
+
+    .option {
+        grid-template-columns: 20px 30px 1fr;
+        gap: 8px;
+    }
+}
