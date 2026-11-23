@@ -1,0 +1,56 @@
+* {
+    background-color: #add8e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    padding: 10px;
+    border: 1px silver solid;
+}
+
+td,
+tr,
+th {
+    padding: 2px;
+    border: 1px silver solid;
+}
+
+tr,
+td,
+th {
+    width: 20px;
+    height: 20px;
+}
+
+#jeden {
+    float: left;
+}
+
+#dwa {
+    float: initial;
+    margin-left: 90px;
+}
+
+#jeden td:hover {
+    background-color: red;
+}
+
+#dwa td:hover {
+    background-color: green;
+}
+
+#legenda {
+    font-size: 60%;
+}
+
+#legenda p:hover {
+    background-color: #add8e4;
+}
+
+#twoja {
+    background-color: red;
+}
+
+#przeciwnik {
+    background-color: green;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@kierownik123/zorya-app",
+  "version": "0.0.1",
+  "author": "Kierownik123",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "*",
+    "@wxn0brp/zhiva-base-lib": "github:wxn0brP/Zhiva-base-lib",
+    "@wxn0brp/flanker-ui": "^0.4.6",
+    "typescript": "^5"
+  }
+}
